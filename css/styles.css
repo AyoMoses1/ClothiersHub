@@ -1,0 +1,667 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@600&family=Lato:wght@300&family=Martel:wght@300&family=Playfair+Display&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    font-family: 'Abhaya Libre', serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Martel', serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+p{
+    font-size: 16px;
+}
+
+/* special color features */
+.tomato {
+    color:tomato;
+}
+
+.grey{
+    color: grey;
+}
+/* special classes  */
+div.container{
+    padding: 0 100px;
+}
+
+div.row{
+    display: flex;
+}
+
+div.header-row{
+    justify-content: center;
+    align-items: center;
+}
+div.header-row h2{
+    font-weight: bold;
+}
+
+/* header section */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background: rgb(253, 253, 253);
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    width: 50%;
+    justify-content: space-between;
+    
+    
+}
+
+.navbar-brand a{
+    text-decoration: none;
+    color: rgb(14, 12, 12);
+    display: block;
+    font-size: 2rem;  
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(14, 12, 12);
+    display: inline-block;
+    font-size: 1.1rem;
+    padding: 10px;
+
+}
+
+/* Hamburger Menu */
+.toggle-button{
+    display: none;
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;
+}
+
+.toggle-button .menu-bar{
+    width: 100%;
+    height: 4px;
+    background: tomato;
+    border-radius: 4px; 
+}
+.active{
+    background: tomato;
+    color: #fff;
+}
+nav ul li a:hover{
+    background: tomato;
+    color: white;
+}
+
+/* Hero Section */
+
+div.hero{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)) , url('../Images/banner/blog.png') ;
+    background-size: cover;
+    padding: 10rem;
+    text-align: center;
+    color: #fff;
+}
+
+div.hero .caption{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    
+}
+
+div.hero .caption p{
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+div.hero h1{
+    font-size:72px;
+    letter-spacing: 10px;
+    padding: 0 auto;
+   
+}
+
+.hero-btn{
+    margin-top: 20px;
+}
+.btn{
+    padding: 10px;
+    color: #fff;
+    border: none;
+    background-color: tomato ;
+    
+}
+
+
+/* About Section */
+div.about{
+    margin: 50px 0;
+    text-align: center;
+}
+div.header-row span{
+    background: tomato;
+    width: 100px;
+    height: 0.5px;
+    padding: 1px;
+}
+div.header-row h2{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0 10px;
+}
+div.about img{
+    width: 100%;
+    max-height: 500px;
+    padding: 40px 0;
+}
+div.about-caption{
+    margin: 0 50px;
+}
+div.about-links{
+    margin:20px 0;
+}
+div.about-links a{
+    text-decoration: none;
+    color: tomato;
+    font-weight: bold;
+    padding: 0 10px ;
+}
+
+/* services */
+div.services{
+    background: rgb(250, 249, 249);
+    padding: 50px 0;
+}
+
+div.services-caption{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+div.services-caption div{
+    max-width: 30%;
+    text-align: center;
+    padding-bottom: 40px;
+    
+}
+div.services-caption div h3{
+    margin: 20px 0;
+}
+
+.icon{
+    display: inline-block;
+    color: tomato;
+    font-size: 40px;
+    border: 1px dashed tomato;
+    padding: 10px 20px;
+}
+
+
+/* News Section */
+.news {
+    padding: 50px 0;
+}
+div.header-row{
+    margin-bottom: 50px;
+}
+div.news-card{
+    justify-content: space-between;
+    
+}
+div.news div.news-details hr{
+    width: 100px;    
+    border: 0.5px solid orange ;
+    margin: 20px 0;
+}
+
+div.card{
+    max-width: 30%;
+    box-shadow:  0 0 2px 2px #e2dbdb80;
+}
+
+div.card img{
+    width: 100%;
+}
+
+ div.card-caption{
+     margin: 10px ;
+     justify-content: space-between;
+     
+ }
+
+ 
+div.date{
+    border: 1px solid #ddd;
+    width: 70px;
+    height: 70px;
+    flex-direction: column;
+}
+
+div.date div:first-child{
+    background: red;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+div.date div:last-child{
+    text-align: center;
+}
+
+div.news-details{
+    width: 70%;
+}
+div.card-caption aside{
+    width: 10%;
+}
+
+/* Stories Section */
+div.stories{
+    background: rgb(250, 249, 249);
+    padding: 50px 0;
+}
+div.stories div.story-cards{
+    justify-content: center;
+    margin-top: 50px;
+}
+div.stories-card{
+    max-width: 25%;
+    background: #fff;
+    padding: 40px 10px;
+    box-shadow:  5px 5px 5px 2px #ddd1d1f3; 
+    margin-right: 20px;   
+}
+div.stories-card:last-child{
+    margin: 0;
+}
+div.bio{
+    margin-bottom: 20px;
+}
+div.bio img{
+    width: 20%;
+}
+div.bio div{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div.story-caption{
+    padding: 10px 0;
+    word-spacing: 4px;  
+}
+
+/* footer section */
+div.footer{
+    margin-top: 50px;
+}
+div.footer div.footer-content{
+    justify-content: space-around;
+}
+div.footer div.col-6{
+    width: 45%;
+}
+div.footer div.col-6:first-child{
+    text-align: center;
+    margin: auto 0;
+}
+div.footer div.col-6:first-child h2{
+   margin-bottom: 20px;
+}
+div.footer div.col-6:first-child p{
+    margin-bottom: 20px;
+}
+
+div.footer div.col-6:first-child hr{
+    color: #ddd;
+    margin-top: 40px;
+ }
+
+input{
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    color: rgb(59, 56, 56);
+    background: transparent;
+    font-size: 1rem;
+}
+form textarea{
+    width:100%;
+    height: 150px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    color: rgb(59, 56, 56);
+    background: transparent;
+    font-size: 1rem;
+}
+::placeholder{
+    color: #aaa;
+}
+div.footer-textarea{
+    margin: 10px 0;
+}
+
+div.footer button{
+    padding: 10px 30px;
+    background: rgb(196, 38, 10);
+}
+div.social{
+    justify-content: space-around;
+    margin: 40px 0 20px;
+}
+div.social span{
+    display: inline-block;
+    color: #fff;
+    font-size: 25px;
+    background: rgb(196, 38, 10);
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+div.rights{
+    padding: 20px;
+    text-align: center;
+    background: #eee;
+    margin-top: 50px;
+}
+
+/* Business Approach */
+div.features{
+    margin: 50px 0;
+}
+div.business-niche{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+div.business-niche div{
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 0 2px 2px #e2dbdb80;
+    
+}
+
+div.business-niche  img{
+    width: 100%;
+    height: 250px;
+}
+div.business-niche div h3{
+    margin: 20px 0;
+    
+}
+div.business-niche div p{
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+div.business-niche div a{
+    display: inline-block;
+    text-decoration: none;
+    color: orange;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* RESPONSIVE DESIGNS */
+
+
+@media screen and (max-width:1078px){
+   div.date{
+       width: 55px;
+   } 
+}
+@media screen and (max-width:940px){
+    .toggle-button{
+        display: flex;
+    }
+    nav ul li a{
+        display: block;
+    }
+    ul.nav-links{
+        display: none;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        background: #fff;
+        transition: 1s;
+    }
+    ul.nav-links.active{
+        display: flex;
+    }
+    ul li a{
+        display: block;
+        padding: 0.5rem 1rem;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    div.hero{
+        padding: 5rem;
+    }
+    div.news div.card{
+        max-width: 70%;
+    } 
+ }
+
+
+
+/* Mobile Responsiveness */
+@media screen and (max-width:800px){
+
+    /* General Intermediaries */
+    div.container{
+        padding: 0 2px;
+    }
+    div.header-row{
+        text-align: center;
+        flex-direction: column;  
+    }
+    div.header-row h2{
+        margin:10px 0;
+    }
+    div.header-row span{
+        width: 50px;
+    }
+    /* News Section */
+    div.news-card{
+        justify-content: space-around;
+    }
+    div.card-caption{
+        margin: 5px;
+    }
+    div.date{
+        width: 60px;
+    }
+    div.news-card{
+        padding: 0 10px;
+    }
+    /* footer section */
+    div.footer-content{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    div.footer-content div.col-6{
+        width: 80%;
+        margin-bottom: 50px;
+    }
+    div.footer-content div.col-6 textarea{
+        height: 100px;
+    }
+
+    div.footer .btn-container{
+        text-align: center;
+    }
+}
+@media screen and (max-width:761px){
+    div.hero{
+        padding: 3rem;
+    }
+    div.hero h1{
+        font-size: 36px;
+        letter-spacing: 2px;
+    }
+    div.hero .caption p{
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:687px){
+
+    /* news section */
+    div.news-card{
+        flex-wrap: wrap;
+    }
+    div.card-caption{
+        justify-content: space-around;
+        padding: 20px 0;
+    } 
+    div.card{
+        margin: 20px 100px;
+    }
+    /* business solutions */
+    div.business-niche  img{
+        height: 150px;
+    }
+ }
+@media screen and (max-width:600px){
+    div.services-caption div{
+        max-width: 45%;
+    }
+}
+
+@media screen and (max-width:537px){
+    
+    /* business approach */
+    div.business-niche div{
+        width: 50%;
+        margin: 50px 100px;
+    }
+    /* News section */
+    div.card{
+        margin: 20px 20px;
+    }
+
+    /* Success stories */
+    div.stories div.story-cards{
+        flex-wrap: wrap;
+    }
+    div.stories-card{
+        max-width: 50%; 
+        margin: 20px;
+        box-shadow:  5px 5px 5px 2px #ddd1d1f3; 
+    }
+    div.story-caption{
+        padding: 0 10px;
+    }
+} 
+
+@media screen and (max-width:466px){
+
+    div.services-caption div{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    div.business-niche div{
+        width: 70%;
+    }
+    div.business-niche div{
+        margin: 20px 20px;
+    }
+    div.card{
+        margin: 20px 10px;
+    }
+   
+    div.stories-card {
+        max-width: 70%;
+        margin: 10px;
+        box-shadow: 0 0 2px 2px #f0f0f080;
+    }
+    div.card-caption {
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+    div.news-details {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:376px){
+    
+    div.hero{
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)) , url('../Images/blog/blog4.png');
+       
+        padding: 1.5rem;
+    }
+    div.hero h1{
+        font-size: 26px;
+    }
+    div.hero .caption p{
+        font-size: 10px;
+    }
+    div.hero > p{
+        font-size: 10px;
+    }
+    div.card-caption {
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+    div.news-details {
+        width: 70%;
+    }
+
+}
+@media screen and (max-width:348px){
+
+    div.card-caption {
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+    
+    div.news div.news-details hr {
+        width: 80%;
+        border: 0.5px solid orange;
+        margin: 20px 0;
+       text-align: end;
+    }
+    div.news div.card{
+        max-width: 90%;
+    }
+    div.card-caption {
+        padding: 10px 0;
+    }
+
+}
+
+
